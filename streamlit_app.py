@@ -124,9 +124,9 @@ def call_db_procedure(pdf_bytes: bytes) -> str:
 
 def main():
     st.set_page_config(page_title="Document Combiner & Summarizer", layout="centered")
-    st.title("Document Combiner & GenAI Summarizer")
+    st.title("Document Merge & Consistency Check")
 
-    st.markdown("Upload multiple PDFs, images (png/jpg), or text files. Click 'Combine & Summarize' to create a single PDF and call a DB stored procedure to summarize it.")
+    st.markdown("Upload multiple PDFs. Click 'Combine & AICheck' to create a single PDF and check for field consistencies.")
 
     uploaded_files = st.file_uploader("Upload files", accept_multiple_files=True)
 
